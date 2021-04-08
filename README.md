@@ -1,15 +1,15 @@
 # COVID-19-Real-Time-Face-Mask-Detector-using-CNN
 
-	•	*Topic:* COVID-19 Real-Time Face Mask Detector (using computer vision and deep learning)
+	•	Topic: COVID-19 Real-Time Face Mask Detector (using computer vision and deep learning)
 
-	•	*Libraries & Frameworks:* Keras, TensorFlow, MobileNetV2 architecture, opencv
+	•	Libraries & Frameworks: Keras, TensorFlow, MobileNetV2 architecture, opencv
 
 To train our custom face mask detector, we need to separate our project into two phases/levels:
 
 	•	Phase 1: Training (code1.py)
 	•	Phase 2: Deployment (code2.py)
 
-*Phase 1 – Training:*
+## Phase 1 – Training:
 	
 	i.	Pre – Training:
 	    a.	load face mask detection dataset from disk
@@ -33,14 +33,14 @@ To train our custom face mask detector, we need to separate our project into two
 	    c.	serializes our face mask classifier
 	    d.	plot our accuracy and loss curves
     
-*Phase 2 – Deployment*:
+## Phase 2 – Deployment:
 
     i.	load face mask classifier from disk
     ii.	detect & extract face from the video streaming (using OpenCV and FaceNet)
     iii.	apply face mask classifier to each face to determine "mask" or "no mask"
     iv.	show the results
 
-**Dataset**:
+### Dataset:
 
 	i.	This dataset consists Approx. 4000 images belonging to two classes:
 	    -	faces with mask: 1951 images
@@ -51,9 +51,11 @@ To train our custom face mask detector, we need to separate our project into two
 	    1. Take regular face photos and then create a custom Python script for computer vision to add face masks to them.
 	    2. Data augmentation - Applying a (small) amount of the transformations (translations, rotations, scale changes, shear, and horizontal inversion) to an input image will change its appearance slightly, but it does not change the class label.
 
-**Results**:
-	i.	COVID-19 face mask detector training accuracy/loss curves demonstrate high accuracy and little signs of overfitting on the data:
+### Results:
+i.	COVID-19 face mask detector training accuracy/loss curves demonstrate high accuracy and little signs of overfitting on the data:
+
 ![image](https://user-images.githubusercontent.com/35423788/113988989-abb14e80-9858-11eb-9fbc-613f4598b0c1.png)
 
-	ii.	Model Demonstration:
+ii.	Model Demonstration:
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/35423788/113990852-90dfd980-985a-11eb-8ae0-10fcbfeeb316.gif)
